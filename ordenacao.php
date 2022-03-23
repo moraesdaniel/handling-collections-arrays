@@ -34,3 +34,9 @@ echo "Notas ordenadas pelo nome do aluno (chave):" . PHP_EOL;
 $notasOrdemAlfabetica = $notas;
 ksort($notasOrdemAlfabetica); //Existe também a krsort
 var_dump($notasOrdemAlfabetica);
+
+if (is_array($notas)) {
+    echo "Sim, é um array";
+} else {
+    echo "Não, não é um array";
+}
