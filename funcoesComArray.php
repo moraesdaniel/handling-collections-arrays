@@ -2,7 +2,7 @@
 
 $notas = [
     'João' => 10,
-    'Ana' => 8,
+    'Ana' => null,
     'Luis' => 9,
     'Pedro' => 7
 ];
@@ -12,6 +12,12 @@ $pessoas = [
     'Ana',
     'Luis',
     'Pedro'
+];
+
+$array = [
+    'primeiro',
+    1 => 'segundo',
+    'terceiro'
 ];
 
 $totalPessoas = count($pessoas);
@@ -26,5 +32,7 @@ echo '$notas é um array ordenado?' . PHP_EOL;
 var_dump(array_is_list($notas));
 echo '$pessoas é um array ordenado?' . PHP_EOL;
 var_dump(array_is_list($pessoas));
+echo '$array é um array ordenado?' . PHP_EOL;
+var_dump(array_is_list($array));
 
 echo "Quantidade de pessoas é $totalPessoas";
