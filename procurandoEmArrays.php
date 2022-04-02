@@ -21,3 +21,12 @@ if (isset($notas['Lucas'])) {
 } else {
     echo 'Lucas não existe ou não tem nota' . PHP_EOL;
 }
+
+$notaDesejada = 10;
+if (in_array($notaDesejada, $notas)) { //Aqui existe ainda a opção de utilizar o terceiro parâmetro como true, desta forma faríamos a comparação estrita
+    echo "Alguém tirou $notaDesejada :)" . PHP_EOL;
+    $aluno = array_search($notaDesejada, $notas);
+    echo "Quem tirou $notaDesejada foi $aluno"; //Idem observação acima
+} else {
+    echo "Ninguém tirou $notaDesejada :(";
+}
